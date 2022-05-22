@@ -1,0 +1,217 @@
+:root {
+  --Primary-Color: #ff4c68;
+  --Secondary-Color: #ef8172;
+  --Neutral: #8f8f8f;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.colored-section {
+  background-color: var(--Primary-Color);
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+  color: #000;
+}
+
+#title .navbar {
+  padding: 0 0 4.5rem 0;
+}
+
+#title .navbar .navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+#title .navbar .nav-item {
+  padding: 0 1rem;
+}
+
+#title .navbar .nav-item .nav-link {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+#title .iphone-mockup {
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  width: 50%;
+  position: relative;
+  right: -30%;
+  margin-bottom: -50%;
+}
+
+.big-heading {
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.download-btn {
+  margin: 5% 3% 5% 0;
+}
+
+#features {
+  position: relative;
+}
+
+#features i {
+  color: var(--Secondary-Color);
+  padding-bottom: 1rem;
+  margin-right: .5rem;
+}
+
+#features .feature-box:hover i {
+  color: var(--Primary-Color);
+}
+
+#features .feature-box {
+  padding: 7% 4.5%;
+}
+
+#features .feature-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#features .feature-text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #8f8f8f;
+}
+
+#testimonials {
+  background-color: var(--Secondary-Color);
+}
+
+#testimonials .testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#testimonials .testimonials-text {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#press {
+  background-color: var(--Secondary-Color);
+}
+
+#press div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#press img.press-logo {
+  width: 90%;
+  margin: 20px 2.5rem 50px 2.5rem;
+}
+
+#pricing .row {
+  margin-top: 3rem;
+}
+
+#pricing .btn-block {
+  width: 100%;
+}
+
+#pricing .card {
+  margin: 1rem;
+}
+
+#pricing .card .card-price {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#pricing .card .card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#pricing .card .card-text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--Neutral);
+}
+
+#pricing .pricing-title {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#pricing .pricing-text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--Neutral);
+}
+
+#footer .footer-text {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--Neutral);
+}
+
+#footer i {
+  margin-left: .5rem;
+  margin-right: .5rem;
+}
+
+@media only screen and (max-width: 991px) {
+  #title {
+    text-align: center;
+  }
+  .iphone-mockup {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    width: 50%;
+    position: relative;
+    right: auto;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 2200px) {
+  section, footer {
+    padding-left: 35vh;
+    padding-right: 35vh;
+  }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1160px) {
+  .big-heading {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .big-heading {
+    font-size: 2.8rem;
+  }
+  #testimonials .testimonials-text {
+    font-size: 2rem;
+  }
+  #pricing .card .card-price {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

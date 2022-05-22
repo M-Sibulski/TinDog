@@ -1,0 +1,235 @@
+// General
+:root {
+    --Primary-Color: #ff4c68;
+    --Secondary-Color: #ef8172;
+    --Neutral: #8f8f8f;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container-fluid {
+    padding: 3% 15% 7%;
+}
+
+.colored-section {
+    background-color: var(--Primary-Color);
+    color: #fff;
+}
+
+.white-section {
+    background-color: #fff;
+    color: #000;
+}
+
+// Title Section
+
+#title {
+
+    .navbar {    
+        padding: 0 0 4.5rem 0;
+
+        .navbar-brand {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: -1px;
+        }
+
+        .nav-item {
+            padding: 0 1rem;
+
+            .nav-link {
+                font-weight: 300;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .iphone-mockup {
+        transform: rotate(25deg);
+        width: 50%;
+        position: relative;
+        right: -30%;
+        margin-bottom: -50%;
+    }
+}
+
+.big-heading {
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+
+.download-btn {
+    margin: 5% 3% 5% 0;
+}
+
+// Features Section
+
+#features {
+    position: relative; 
+    i {
+        color: var(--Secondary-Color);
+        padding-bottom: 1rem;
+        margin-right: .5rem;
+    }
+
+    .feature-box:hover {
+        i {
+            color: var(--Primary-Color);
+        }
+    }
+
+    .feature-box {
+        padding: 7% 4.5%;
+    }
+    
+    .feature-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    .feature-text {
+        font-size: 1rem;
+        font-weight: 300;
+        color: #8f8f8f;
+    }
+}
+
+// Testimonials Section
+
+#testimonials  {
+        background-color: var(--Secondary-Color);
+
+        .testimonial-image {
+            width: 10%;
+            border-radius: 100%;
+            margin: 20px;
+        }
+
+        .testimonials-text {
+            font-weight: bold;
+            font-size: 3rem;
+            line-height: 1.5;
+        }
+}
+
+#press {
+    background-color: var(--Secondary-Color);  
+
+    div {
+        align-items: center;
+    }
+
+    img.press-logo {
+        width: 90%;
+        margin: 20px 2.5rem 50px 2.5rem;
+    }
+}
+
+
+// Pricing Section
+
+#pricing {
+
+    .row {
+        margin-top: 3rem;
+    }
+
+    .btn-block {
+        width: 100%;
+    }
+
+    .card {
+        margin: 1rem;
+
+        .card-price {
+            font-weight: bold;
+            font-size: 3rem;
+            line-height: 1.5;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            font-weight: 300;
+            color: var(--Neutral);
+        }
+    }
+
+    .pricing-title {
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 1.5;
+    }
+
+    .pricing-text {
+        font-size: 1rem;
+        font-weight: 300;
+        color: var(--Neutral);
+    }
+}
+
+// Footer Section
+
+#footer {
+    .footer-text {
+        font-size: 1rem;
+        font-weight: 300;
+        color: var(--Neutral);
+    }
+
+    i {
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #title {
+        text-align: center;
+    }
+    .iphone-mockup {
+        transform: rotate(0);
+        width: 50%;
+        position: relative;
+        right: auto;
+        margin-bottom: 0;
+    }    
+}
+
+@media only screen and (min-width: 2200px) {
+    section, footer {
+        padding-left: 35vh;
+        padding-right: 35vh;
+    }
+}
+
+@media only screen and (min-width: 991px) and (max-width:1160px) {
+    .big-heading {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .big-heading {
+        font-size: 2.8rem;
+    }
+
+    #testimonials .testimonials-text {
+        font-size: 2rem;
+    }
+
+    #pricing .card .card-price {
+        font-size: 2rem;
+    }
+}
